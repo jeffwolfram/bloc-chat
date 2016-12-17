@@ -15,4 +15,16 @@
 
 
 
-var app = angular.module("bloc-chat", ["firebase"], ['ui.router']);
+
+var app = angular.module('bloc-chat',
+                        ['firebase',
+                         'ui.router']);
+
+.config(function($stateProvider){
+    
+    $stateProvider
+    .state('home', {
+        url:'/',
+        templateUrl:'home/home.html'
+    })
+})
