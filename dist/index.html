@@ -6,17 +6,42 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+    <div class="container">
     <h1></h1>
+        <div ng-controller='RoomCtrl'>
+        
+        </div>
+    
+    
+    
+    
+    
+    </div>
+    
+      <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     
     <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
     <script src="/scripts/app.js"></script>
-    <!-- Angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script>
+     // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD8Kr3nQmJCPTQNtHJSCmSG06sczcugXjE",
+        authDomain: "bloc-chat-2-5889d.firebaseapp.com",
+        databaseURL: "https://bloc-chat-2-5889d.firebaseio.com",
+        storageBucket: "bloc-chat-2-5889d.appspot.com",
+        messagingSenderId: "311224039480"
+      };
+      firebase.initializeApp(config);
+    </script>
 
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js">
     </script>
-    <script src="../scripts/firebase.js"></script>
+    
+    
+    <script src="../scripts/room.js"></script>
+    
     <!--    needed for firebase -->
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
