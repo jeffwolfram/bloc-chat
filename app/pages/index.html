@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html ng-app="bloc-chat">
+<html ng-app="blocChat">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
     <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/room_list.css">
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-    <h1></h1>
-        <div ng-controller='RoomCtrl'>
-        
-        </div>
+    <nav class="navbar">
+        <a ui-sref='home' class="logo">
+            <img src="../assets/images/bloc-logo-white.png" alt="bloc logo" />
+        </a>
     
-    
-    
-    
-    
-    </div>
-    
+    </nav>
+    <ui-view></ui-view> 
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
       <!-- Angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+   
     
     <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-    <script src="/scripts/app.js"></script>
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/controllers/AddRoomCtrl.js"></script>
+    <script src="../scripts/controllers/HomeCtrl.js"></script>
+    <script src="../scripts/controllers/RoomListCtrl.js"></script>
+    <script src="../scripts/services/Room.js"></script>
+       <ng-include src="'../templates/room_list.html'"></ng-include>
+    <div class="add-room" ng-controller="AddRoomCtrl as addRoom">
+
+
+
     <script>
      // Initialize Firebase
       var config = {
@@ -40,14 +50,16 @@
     </script>
     
     
-    <script src="../scripts/room.js"></script>
+    
     
     <!--    needed for firebase -->
+<!--
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-database.js"></script>
+-->
     <!--messaging -->
-    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-messaging.js"></script>
+<!--    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-messaging.js"></script>-->
 
 </body>
 </html>

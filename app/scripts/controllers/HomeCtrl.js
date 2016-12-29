@@ -1,9 +1,9 @@
 (function() {
-    function HomeCrtl {
-        
+    function HomeCtrl(){
+        this.heroTitle = "Bloc Chat App"
     };
     
     angular
     .module('blocChat')
-    .controller('HomeCtrl', HomeCrtl);
+    .controller('HomeCtrl', HomeCtrl);
 })();
