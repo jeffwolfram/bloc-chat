@@ -1,4 +1,3 @@
-
 (function(){
     function config($stateProvider, $locationProvider){
         $locationProvider
@@ -11,6 +10,12 @@
             url:'/',
             controller: 'HomeCtrl as home',
             templateUrl: '/templates/home.html'
+        })
+         $stateProvider
+        .state('room', {
+            url:'/',
+            controller: 'RoomListCtrl as roomCtrl',
+            templateUrl: '/templates/room_list.html'
         });
         
     }
@@ -21,11 +26,3 @@
     
     
 })();
-
-
-
-
-
-
-
-
