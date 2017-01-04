@@ -11,9 +11,9 @@
             controller: 'HomeCtrl as home',
             templateUrl: '/templates/home.html'
         })
-         $stateProvider
+   
         .state('room', {
-            url:'/',
+            url:'/room',
             controller: 'RoomListCtrl as roomCtrl',
             templateUrl: '/templates/room_list.html'
         });
