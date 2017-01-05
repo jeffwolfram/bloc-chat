@@ -1,11 +1,9 @@
 <section class="room-list" ng-controller="RoomListCtrl as roomList">
-     <div>
+     <div class="aside">
          <h1>Bloc Chat</h1>
        <table>
          <tr ng-repeat="room in roomList.rooms">
-           <td>
-<!--              <a><span>Room </span></a>-->
-           </td>
+          
            <td>
               <a><span>{{ room.$value }}</span></a>
            </td>
