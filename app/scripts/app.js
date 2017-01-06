@@ -16,6 +16,11 @@
             url:'/room',
             controller: 'RoomListCtrl as roomCtrl',
             templateUrl: '/templates/room_list.html'
+        })
+          .state('modal', {
+            url:'/add-room',
+            controller: 'Modal.Ctrl',
+            templateUrl: '/templates/modal.html'
         });
      
         

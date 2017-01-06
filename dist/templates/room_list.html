@@ -1,11 +1,12 @@
 <section class="room-list" ng-controller="RoomListCtrl as roomList">
      <div class="aside">
          <h1>Bloc Chat</h1>
+         <a href="#" ng-click="roomList.openModal()" class="btn btn-primary">New Room</a>
        <table>
          <tr ng-repeat="room in roomList.rooms">
           
            <td>
-              <a><span>{{ room.$value }}</span></a>
+              <a><span>{{ room.name }}</span></a>
            </td>
         </tr>
       </table>
