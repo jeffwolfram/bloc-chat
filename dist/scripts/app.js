@@ -6,14 +6,8 @@
             requireBase: false
         });
         $stateProvider
-        .state('home', {
-            url:'/',
-            controller: 'HomeCtrl as home',
-            templateUrl: '/templates/home.html'
-        })
-        
         .state('room', {
-            url:'/room',
+            url:'/',
             controller: 'RoomListCtrl as roomCtrl',
             templateUrl: '/templates/room_list.html'
         })

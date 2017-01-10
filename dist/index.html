@@ -6,54 +6,41 @@
     <link rel="stylesheet" href="/styles/style.css">
   
 </head>
-<body>
+    <body>
     <nav class="navbar">
-        <a ui-sref='home' class="logo">
-            <img src="../assets/images/bloc-logo-white.png" alt="bloc logo" />
-        </a>
-    
+        <a ui-sref='home' class="logo"><img src="../assets/images/bloc-logo-white.png" alt="bloc logo" /></a>
     </nav>
     <div class="aside">
-    <ui-view></ui-view> 
-        </div>
+        <ui-view></ui-view> 
+    </div>
     
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script src="/scripts/ui-bootstrap-tpls-2.4.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
       <!-- Angular -->
-   
     
     <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
     <script src="/scripts/app.js"></script>
-    
-    <script src="/scripts/controllers/HomeCtrl.js"></script>
     <script src="/scripts/controllers/RoomListCtrl.js"></script>
     <script src="/scripts/controllers/ModalCtrl.js"></script>
     <script src="/scripts/services/Room.js"></script>
     
-    
-   
-    
-
-
-
     <script>
-     // Initialize Firebase
-     var config = {
-    apiKey: "AIzaSyA43vCSBA4_79187AbPH9NnxHmH9O8Ir0Y",
-    authDomain: "bloc-chat-51e80.firebaseapp.com",
-    databaseURL: "https://bloc-chat-51e80.firebaseio.com",
-    storageBucket: "bloc-chat-51e80.appspot.com",
-    messagingSenderId: "1018101314147"
-  };
-  firebase.initializeApp(config);
+         // Initialize Firebase
+         var config = {
+        apiKey: "AIzaSyA43vCSBA4_79187AbPH9NnxHmH9O8Ir0Y",
+        authDomain: "bloc-chat-51e80.firebaseapp.com",
+        databaseURL: "https://bloc-chat-51e80.firebaseio.com",
+        storageBucket: "bloc-chat-51e80.appspot.com",
+        messagingSenderId: "1018101314147"
+      };
+        firebase.initializeApp(config);
     </script>
 
     <!-- AngularFire -->
-    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js">
-    </script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
     
 
 </body>

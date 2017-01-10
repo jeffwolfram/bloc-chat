@@ -12,3 +12,14 @@
       </table>
     </div>
  </section>
+
+<section class='messages-right'>
+<div class='title-header'>{{ rooms.$id.name }}</div>
+    <ul class"messages-container">
+    <li class="message" ng-repear="message in rooms.messages">
+        <span class="username">{{message.useername}}</span>
+        <span class="time-sent">message.sentAt</span>
+        <span class="content">{{message.content}}</span>
+        </li>
+    </ul>
+</section>
