@@ -1,11 +1,13 @@
 
 
-.left-side {
+.sidebar {
   color: #000;
   background-color: #DEDEDE;
   border-right: slategray double;
   padding-left: 2em; 
     height:100%;
+    position:fixed;
+    top:100px;
     
    
 }
@@ -15,6 +17,7 @@
 }
 .message-side {
     padding:0px;
+    float:right;
 }
 .navbar {
     
@@ -22,6 +25,8 @@
     height: 100px;
     margin-bottom:0px;
     padding-left:2em;
+    width:100%;
+    position:fixed;
     
 }
 h1 {
@@ -53,6 +58,7 @@ h1 {
 }
 .message:nth-child(even){
     background-color: rgb(235,235,235);
+    padding:1em;
    
 }
 .time-sent {
