@@ -1,25 +1,34 @@
-<section class="room-list" ng-controller="RoomListCtrl as roomList">
-     <div class="aside">
-         <h1>Bloc Chat</h1>
-         <a href="#" ng-click="roomList.openModal()" class="btn btn-primary">New Room</a>
-       <table>
-         <tr ng-repeat="room in roomList.rooms">
-          
-           <td>
-              <a><span>{{ room.name }}</span></a>
-           </td>
-        </tr>
-      </table>
-    </div>
- </section>
+<div class="row" ng-controller="RoomListCtrl as roomList">
+    <div class="left-side col-md-3 ">
+        <div class="room-list">
+             <div class="aside">
+                 <h1>Bloc Chat</h1>
+        <!--         Create new chat room button-->
+                 <a href="#" ng-click="roomList.openModal()" class="btn btn-primary" >New Room</a>
+                 <h3 class="rooms-title">Active Rooms</h3>
 
-<section class='messages-right'>
-<div class='title-header'>{{ rooms.$id.name }}</div>
-    <ul class"messages-container">
-    <li class="message" ng-repear="message in rooms.messages">
-        <span class="username">{{message.useername}}</span>
-        <span class="time-sent">message.sentAt</span>
-        <span class="content">{{message.content}}</span>
-        </li>
-    </ul>
-</section>
+        <!--    This is where we list out the chat rooms-->
+
+                 <div ng-repeat="room in roomList.rooms">
+                  <a ng-click="roomList.activeRoom(room)"><span>{{ room.name }}</span></a> 
+                 </div>  
+            </div>
+        </div>
+    </div>
+    <!-- show messages    -->
+    <div class="col-md-9 message-side">
+        <div class="message-con">
+            <div class="messages-right">
+                <div class="title-header">{{ roomList.room }}</div>
+                <ul class="message-container">
+            
+                    <li class="message" ng-repeat="message in roomList.messages">
+                        <div class="username"> {{message.username}}</div>
+                        <div class="time-sent"> {{message.sentAt}}</div>
+                        <div class="content"> {{message.content}}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
