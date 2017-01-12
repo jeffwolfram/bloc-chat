@@ -17,8 +17,8 @@
             templateUrl: '/templates/modal.html'
         })
         .state('cookies', {
-            url:'/username',
-            controller: 'CookieCtrl',
+            url:'/new-user',
+            controller: 'NewUserModalCtrl',
             templateUrl: '/templates/username-modal.html'
         });
      

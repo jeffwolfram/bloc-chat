@@ -8,7 +8,7 @@
         rooms.$add({
             name: roomName
         })
-    };
+    };$firebaseArray
   
 
     return {

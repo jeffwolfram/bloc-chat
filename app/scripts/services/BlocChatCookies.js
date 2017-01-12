@@ -4,8 +4,8 @@
             if(!currentUser || currentUser === ''){
                 //do something
                 $uibModal.open({
-                    controller: 'CookieCtrl',
-                    controllerAs: 'CookieCtrl',
+                    controller: 'NewUserNameModalCtrl',
+                    controllerAs: 'newuser',
                     templateUrl: '/templates/username-modal.html',
                     size: 'sm',
                     backdrop: 'static',
@@ -17,6 +17,6 @@
 
     angular 
     .module('blocChat')
-    .run(['$cookies', '$uibModal', BlocChatCookies]);
+    .run(['$cookies', '$uibModal','User', BlocChatCookies]);
 
  })();
