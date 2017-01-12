@@ -15,6 +15,11 @@
             url:'/add-room',
             controller: 'Modal.Ctrl',
             templateUrl: '/templates/modal.html'
+        })
+        .state('cookies', {
+            url:'/username',
+            controller: 'CookieCtrl',
+            templateUrl: '/templates/username-modal.html'
         });
      
         
@@ -22,7 +27,7 @@
     }
     
      angular
-         .module('blocChat', ['ui.router','firebase', 'ui.bootstrap'])
+         .module('blocChat', ['ui.router','firebase', 'ngCookies', 'ui.bootstrap'])
          .config(config);
     
     

@@ -1,19 +1,28 @@
-
+html {
+    height: 100%;
+}
+body {
+    padding:0;
+    margin:0;
+    min-height: 100%;
+}
 
 .sidebar {
   color: #000;
   background-color: #DEDEDE;
   border-right: slategray double;
   padding-left: 2em; 
-    height:100%;
-    position:fixed;
-    top:100px;
+    min-height:100%;
+    position:absolute;
+/*    position:fixed;*/
+/*    top:100px;*/
     
    
 }
 .message-con {
     width:100%;
     padding-left:0;
+    position:relative;
 }
 .message-side {
     padding:0px;
@@ -26,7 +35,7 @@
     margin-bottom:0px;
     padding-left:2em;
     width:100%;
-    position:fixed;
+/*    position:fixed;*/
     
 }
 h1 {
