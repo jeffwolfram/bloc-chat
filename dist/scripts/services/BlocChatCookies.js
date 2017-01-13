@@ -2,6 +2,8 @@
         function BlocChatCookies($cookies, $uibModal, User) {
         var currentUser = $cookies.get('blocChatCurrentUser');
             if(!currentUser || currentUser === ''){
+                console.log('cookies');
+
                 //do something
                 $uibModal.open({
                     controller: 'NewUserNameModalCtrl',
@@ -12,6 +14,7 @@
                     keyboard: false,
                     animation: true
                 });
+                
             };
         }
 

@@ -6,11 +6,15 @@
 		
 		return {
 			getByRoomId: function(roomId) {
-                var list;
+               var list;
 			     ref.orderByChild('roomId').equalTo(roomId).on('value', function(d){
-                     list = d.val();
+                 list = d.val();
                  });
-                return list;
+                console.log(list[1]);
+                console.log('first: ' + list[0])
+                
+                
+                return list.splice(1, list.length);
 			}
 		};
 	}

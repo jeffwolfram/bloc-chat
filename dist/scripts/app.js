@@ -16,7 +16,7 @@
             controller: 'Modal.Ctrl',
             templateUrl: '/templates/modal.html'
         })
-        .state('cookies', {
+        .state('newUserModal', {
             url:'/new-user',
             controller: 'NewUserModalCtrl',
             templateUrl: '/templates/username-modal.html'
@@ -27,7 +27,7 @@
     }
     
      angular
-         .module('blocChat', ['ui.router','firebase', 'ngCookies', 'ui.bootstrap'])
+         .module('blocChat', ['ui.router','firebase', 'ngCookies',  'ui.bootstrap'])
          .config(config);
     
     
