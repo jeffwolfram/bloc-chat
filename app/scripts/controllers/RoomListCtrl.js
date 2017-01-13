@@ -6,7 +6,7 @@
         
         this.activeRoom = function(room){
             this.room = room.name;
-
+            
             this.messages = Message.getByRoomId(room.$id);
             console.log(this.messages.length);
         }
