@@ -1,7 +1,7 @@
 (function() {
     function NewUserNameModalCtrl($uibModalInstance, $cookies, User) {
         this.name = User.name;
-        
+        console.log(User.name);
         this.addUser = function() {
             if(this.name) {
                 $cookies.put('blocChatCurrentUser', this.name);

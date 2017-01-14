@@ -10,8 +10,8 @@
 			     ref.orderByChild('roomId').equalTo(roomId).on('value', function(d){
                  list = d.val();
                  });
-                console.log(list[1]);
-                console.log('first: ' + list[0])
+                console.log('list' + list[1]);
+               
                 
                 
                 return list.splice(1, list.length);

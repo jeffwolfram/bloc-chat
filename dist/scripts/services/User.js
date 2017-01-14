@@ -11,14 +11,14 @@
                     name: username
                 });
         
-        
+        console.log('testing user.js page');
         return username;
-    };
+             };
         return {
             username: username,
             add: add
-        };
-        }
+              };
+   }
     angular 
            .module('blocChat')
            .factory('User', ['$firebaseArray', '$cookies', User]);

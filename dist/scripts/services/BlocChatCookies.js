@@ -14,7 +14,7 @@
                     keyboard: false,
                     animation: true
                 });
-                
+                console.log("after uib");
             };
         }
 
