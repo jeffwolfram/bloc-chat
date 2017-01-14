@@ -15,7 +15,10 @@
                 
                 
                 return list.splice(1, list.length);
-			}
+			},
+            send: function(newMessage) {
+                //add code here 
+            }
 		};
 	}
 	
