@@ -60,14 +60,18 @@ h1 {
 }
 .message {
     background-color:rgb(240,240,240);
-    width:100%;
+    width:70%;
     list-style:none;
-        padding:1em;
+    padding:1em;
+    border-radius: 20px;
+    margin: 3% auto;
+    
     
 }
 .message:nth-child(even){
     background-color: rgb(235,235,235);
     padding:1em;
+    
    
 }
 .time-sent {

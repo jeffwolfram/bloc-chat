@@ -10,11 +10,11 @@
 			     ref.orderByChild('roomId').equalTo(roomId).on('value', function(d){
                  list = d.val();
                  });
-                console.log('list' + list[1]);
+                
                
                 
                 
-                return list.splice(1, list.length);
+                return list;
 			}
 		};
 	}
