@@ -10,6 +10,11 @@
             this.messages = Message.getByRoomId(room.$id);
             console.log(this.messages.length);
         }
+        this.send = function(newMessage) {
+            Message.send(newMessage);
+            console.log("this.send on rlctrl");
+            this.textinput = '';
+        }
         
         this.openModal = function(){
             $uibModal.open({

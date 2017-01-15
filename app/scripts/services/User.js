@@ -16,6 +16,7 @@
              };
         return {
             username: username,
+            joined:Date.now(),
             add: add
               };
    }

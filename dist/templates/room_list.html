@@ -16,6 +16,7 @@
         </div>
     </div>
     <!-- show messages    -->
+   
     <div class="col-md-9  message-side">
         <div class="message-con">
             <div class="messages-right">
@@ -32,3 +33,7 @@
         </div>
     </div>
 </div>
+ <div class="user-input">
+		<textarea class="input-message" ng-model="rooms.textinput" ng-keyup="$event.keyCode == 13 && rooms.send(rooms.textinput)"></textarea>
+		<button class="btn" ng-click="rooms.send(rooms.textinput)">Submit</button>
+	</div>
