@@ -8,13 +8,13 @@
             this.room = room.name;
             
             this.messages = Message.getByRoomId(room.$id);
-            console.log(this.messages.length);
+            
         }
         this.send = function(newMessage) {
-            Message.send(newMessage);
+            Message.send(newMessage, this.room);
             console.log("this.send on rlctrl");
             this.textinput = '';
-        }
+        };
         
         this.openModal = function(){
             $uibModal.open({

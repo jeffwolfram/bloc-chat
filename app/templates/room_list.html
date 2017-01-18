@@ -32,8 +32,8 @@
             </div>
         </div>
     </div>
-</div>
- <div class="user-input">
-		<textarea class="input-message" ng-model="rooms.textinput" ng-keyup="$event.keyCode == 13 && rooms.send(rooms.textinput)"></textarea>
-		<button class="btn" ng-click="rooms.send(rooms.textinput)">Submit</button>
+     <div class="user-input">
+		<textarea class="send" ng-model="roomList.textinput" ng-keyup="$event.keyCode == 13 && rooms.send(textinput)"></textarea>
+		<button class="send" ng-click="roomList.send(textinput)">Submit</button>
 	</div>
+</div>

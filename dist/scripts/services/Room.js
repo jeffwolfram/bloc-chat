@@ -16,6 +16,7 @@
       all: rooms,
       add: add
     };
+      return room;
   }
 
   angular
