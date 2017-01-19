@@ -11,7 +11,7 @@
             } else{
                 alert("You must enter a valid name");
             }
-        }
+        };
     }
             angular 
                     .module('blocChat')

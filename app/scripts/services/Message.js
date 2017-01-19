@@ -12,16 +12,15 @@
                  });
                 return list; 
 			},
-            send: function(input, currentRoomId){
-                if(true) {
+            send: function(newMessage, room){
                     console.log("submitted message from Message.send"); 
                     messages.$add({
-                        content: input,
-                        roomId: currentRoomId,
-                        sentAt: 'today',
+                        content: "just testing",
+                        roomId: roomlist.room,
+                        sentAt: "today",
                         username: $cookies.get('blocChatCurrentUser')
                     });
-                }
+            console.log(Room.roomId);
                
             }
           

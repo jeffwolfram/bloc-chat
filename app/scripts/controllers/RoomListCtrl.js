@@ -1,5 +1,6 @@
 (function() {
     function RoomListCtrl(Room, Message, $uibModal){
+        
         this.rooms = Room.all;
         this.messages;
         this.room = null;
