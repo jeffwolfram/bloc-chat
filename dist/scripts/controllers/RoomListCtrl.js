@@ -5,7 +5,7 @@
         this.room = null;
         
         this.activeRoom = function(room){
-            this.room = room.name;
+            this.room = room;
             
             this.messages = Message.getByRoomId(room.$id);
             
