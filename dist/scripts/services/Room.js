@@ -16,7 +16,7 @@
       all: rooms,
       add: add
     };
-      return room.name;
+      return room;
   }
 
   angular

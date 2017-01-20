@@ -1,9 +1,12 @@
 (function() {
-    function RoomListCtrl(Room, Message, $uibModal){
+    function RoomListCtrl(Room, Message, $uibModal, $scope){
         
         this.rooms = Room.all;
         this.messages;
         this.room = null;
+        $scope.message = null;
+        
+       
         
         this.activeRoom = function(room){
             this.room = room;
@@ -13,9 +16,14 @@
         }
         this.send = function(newMessage) {
             Message.send(newMessage, this.room);
-            console.log("this.send on rlctrl");
-            this.textinput = '';
+            $scope.message = '';
         };
+         this.rooms.$loaded().then(function(rooms){
+//            this.room = rooms.$getRecord('1')
+            if(this.room){
+                this.messages = Message.getByRoomId(this.room.$id);
+            }
+        })
         
         this.openModal = function(){
             $uibModal.open({
@@ -33,5 +41,5 @@
     
     angular
     .module('blocChat')
-    .controller('RoomListCtrl', ['Room', 'Message', '$uibModal', RoomListCtrl]);
+    .controller('RoomListCtrl', ['Room', 'Message', '$uibModal', '$scope', RoomListCtrl]);
 })();
