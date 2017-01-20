@@ -14,8 +14,10 @@ body {
   padding-left: 2em; 
     min-height:100%;
     position:absolute;
+    margin-top:100px;
+    position:fixed;
 /*    position:fixed;*/
-/*    top:100px;*/
+
     
    
 }
@@ -35,7 +37,8 @@ body {
     margin-bottom:0px;
     padding-left:2em;
     width:100%;
-/*    position:fixed;*/
+    position:fixed;
+    z-index:5;
     
 }
 h1 {
@@ -82,7 +85,7 @@ h1 {
 }
 .user-input{
     
-    width: 80%;
+    width: 76%;
     height: 3.5em;
     position: fixed;
     bottom: 0;
@@ -92,7 +95,7 @@ h1 {
     position:inline-block;
 }
 .input-message {
-	width: 100%;
+	width: 85%;
     position: absolute;
     
     height: 100%;
@@ -103,8 +106,8 @@ h1 {
     width: 15%;
     height: 100%;
     border: none;
-    position: absolute;
-    
+    position: relative;
+    float:right;
 /*    right: 0;*/
 }
 .boxsizingBorder {
@@ -112,11 +115,20 @@ h1 {
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:990px){
     .user-input{
-        width:100%;
+        width:80%;
         margin:auto;
+        left:193px;
     }
+    .message-side {
+    padding: 0px;
+    float: right;
+    width: 80%;
+        top:100px;
+        
+    /* margin: auto; */
+}
     
     
 }
