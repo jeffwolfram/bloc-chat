@@ -29,6 +29,7 @@ body {
 .message-side {
     padding:0px;
     float:right;
+    top:100px;
 }
 .navbar {
     
@@ -39,7 +40,7 @@ body {
     width:100%;
     position:fixed;
     z-index:5;
-    
+    padding-top:17px;
 }
 h1 {
     color:black;
@@ -130,5 +131,28 @@ h1 {
     /* margin: auto; */
 }
     
+    
+}
+@media only screen and (max-width:500px) {
+    .sidebar {
+  color: #000;
+  background-color: transparent;
+  border-right: none;
+  padding-left: 2em; 
+    min-height:100%;
+    position:absolute;
+        margin: 0 auto;
+    margin-top:100px;
+        
+    position:fixed;
+/*    position:fixed;*/
+
+    
+   
+}
+    body {
+        text-align:center;
+        margin:auto;
+    }
     
 }
